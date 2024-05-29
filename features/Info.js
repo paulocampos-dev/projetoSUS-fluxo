@@ -9,7 +9,7 @@ module.exports = function (controller) {
     flow.addMessage(JSON.stringify({
         "type":"message",
         "section": "informação",
-        "body": "que tipo de informação você gostaria de ter ?"
+        "body": "que tipo de informação você gostaria de ter   ?"
     }), "info")
 
     flow.after(async (response, bot) => {
