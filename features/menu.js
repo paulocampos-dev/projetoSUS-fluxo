@@ -7,6 +7,7 @@ module.exports = function (controller) {
 
   flow.addAction("intro")
 
+
   flow.addMessage(JSON.stringify({
     "type": "message",
     "section": "Introdução",
@@ -40,8 +41,7 @@ module.exports = function (controller) {
       }
     },
     "escolhaMenu",
-    "menuInicial",
-    "info")
+    "menuInicial")
 
 
   flow.after(async (response, bot) => {
