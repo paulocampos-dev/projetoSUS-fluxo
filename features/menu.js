@@ -34,10 +34,14 @@ module.exports = function (controller) {
       if(response=="agendamento"){
         await bot.cancelAllDialogs();
         await bot.beginDialog("agendamento")
+      }if(response == "informação"){
+        await bot.cancelAllDialogs();
+        await bot.beginDialog("info")
       }
     },
     "escolhaMenu",
-    "menuInicial")
+    "menuInicial",
+    "info")
 
 
   flow.after(async (response, bot) => {
