@@ -10,7 +10,7 @@ module.exports = function (controller) {
   flow.addMessage(JSON.stringify({
     "type": "message",
     "section": "Agendamento",
-    "body": "Ok, vamos começar seu agendamento"
+    "body": "Ok, vamos começar seu agendamento "
   }),
     "agendamento")
 

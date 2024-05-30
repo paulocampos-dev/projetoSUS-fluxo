@@ -22,7 +22,9 @@ module.exports = function (controller) {
                 await bot.cancelAllDialogs();
                 await bot.beginDialog("medicamento");
             }
-        })
+        },"info_response"
+        /*onde fica a resposta do usuario*/, "info"
+      )
       
         flow.after(async (response, bot) => {
           await bot.cancelAllDialogs();
