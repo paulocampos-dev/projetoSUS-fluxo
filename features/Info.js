@@ -15,7 +15,7 @@ module.exports = function (controller) {
         flow.addQuestion(JSON.stringify({
           "type": "question",
           "section": "info",
-          "body": "Que tipo de info quer saber?"
+          "body": "Que tipo de info quer saber   ?"
         }),
         async(response, flow, bot)=>{
             if(response == "medicamento"){
